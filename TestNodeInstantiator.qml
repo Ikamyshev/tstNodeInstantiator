@@ -1,4 +1,4 @@
-//Test3d
+//TestNodeInstantiator
 import QtQuick 2.0 as QQ2
 import QtQml 2.11
 import QtQml.Models 2.11
@@ -35,11 +35,11 @@ QQ2.Item {
                     }
                 }
             ]
-
             Timer {
                 interval: 500; running: true; repeat: true
                 onTriggered: {
                     entityModel.append({ y: Math.random()*10 })
+                    console.log("timer", Math.random()*10)
                 }
             }
 
