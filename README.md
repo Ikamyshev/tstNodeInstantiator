@@ -1,3 +1,2 @@
 # tst_qml
-Adding entitys to the Scene3D through model changes.
-Using NodeInstantiator for it.
+Using NodeInstantiator for adding entitys to the Scene3D through model changes dynamically.
