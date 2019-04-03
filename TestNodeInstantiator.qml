@@ -35,23 +35,11 @@ QQ2.Item {
                     }
                 }
             ]
-            property var circlesPositions: [
-                Qt.vector3d( 0.0,  0.0,  0.0),
-                Qt.vector3d( 2.0,  5.0, -15.0),
-                Qt.vector3d(-1.5, -2.2, -2.5),
-                Qt.vector3d(-3.8, -2.0, -12.3),
-                Qt.vector3d( 2.4, -0.4, -3.5),
-                Qt.vector3d(-1.7,  3.0, -7.5),
-                Qt.vector3d( 1.3, -2.0, -2.5),
-                Qt.vector3d( 1.5,  2.0, -2.5),
-                Qt.vector3d( 1.5,  0.2, -1.5),
-                Qt.vector3d(-1.3,  1.0, -1.5),
-            ]
+
             Timer {
                 interval: 500; running: true; repeat: true
                 onTriggered: {
                     entityModel.append({ y: Math.random()*10 })
-                    console.log("timer", Math.random()*10)
                 }
             }
 
